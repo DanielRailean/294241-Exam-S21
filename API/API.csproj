@@ -14,4 +14,43 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="WebApplication\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="WebApplication\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="WebApplication\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="WebApplication\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="WebApplication\Pages\Error.cshtml" />
+      <_ContentIncludedByDefault Remove="WebApplication\Pages\_Host.cshtml" />
+      <_ContentIncludedByDefault Remove="WebApplication\App.razor" />
+      <_ContentIncludedByDefault Remove="WebApplication\Pages\Counter.razor" />
+      <_ContentIncludedByDefault Remove="WebApplication\Pages\Index.razor" />
+      <_ContentIncludedByDefault Remove="WebApplication\Shared\MainLayout.razor" />
+      <_ContentIncludedByDefault Remove="WebApplication\Shared\NavMenu.razor" />
+      <_ContentIncludedByDefault Remove="WebApplication\Shared\SurveyPrompt.razor" />
+      <_ContentIncludedByDefault Remove="WebApplication\_Imports.razor" />
+      <_ContentIncludedByDefault Remove="WebApplication\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="WebApplication\appsettings.json" />
+      <_ContentIncludedByDefault Remove="WebApplication\bin\Debug\net5.0\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="WebApplication\bin\Debug\net5.0\appsettings.json" />
+      <_ContentIncludedByDefault Remove="WebApplication\bin\Debug\net5.0\WebApplication.deps.json" />
+      <_ContentIncludedByDefault Remove="WebApplication\bin\Debug\net5.0\WebApplication.runtimeconfig.dev.json" />
+      <_ContentIncludedByDefault Remove="WebApplication\bin\Debug\net5.0\WebApplication.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="WebApplication\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="WebApplication\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="WebApplication\obj\WebApplication.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="WebApplication\Properties\launchSettings.json" />
+    </ItemGroup>
+
 </Project>
