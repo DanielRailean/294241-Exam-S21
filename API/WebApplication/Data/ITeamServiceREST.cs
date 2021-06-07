@@ -38,9 +38,9 @@ namespace WebApplication.Data
             return gotFamilies;
         }
 
-        public async Task<Team> AddTeam(Team book)
+        public async Task<Team> AddTeam(Team team)
         {
-            string teamJson = JsonSerializer.Serialize(book);
+            string teamJson = JsonSerializer.Serialize(team);
             HttpContent content = new StringContent(
                 teamJson,
                 Encoding.UTF8,

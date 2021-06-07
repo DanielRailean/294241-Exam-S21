@@ -8,6 +8,6 @@ namespace WebApplication.Data
     public interface ITeamService
     {
         Task<IList<Team>> GetAllTeams(int teamRank,string name);
-        Task<Team> AddTeam(Team book);
+        Task<Team> AddTeam(Team team);
     }
 }
