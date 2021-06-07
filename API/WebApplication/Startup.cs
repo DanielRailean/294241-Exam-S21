@@ -27,6 +27,7 @@ namespace WebApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddScoped<ITeamService, ITeamServiceREST>();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
         }
