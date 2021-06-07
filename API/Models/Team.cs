@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace API.Models
 {
@@ -9,5 +11,7 @@ namespace API.Models
         [Required,MaxLength(50)]
         public string NameOfCoach {get; set; }
         public int Ranking {get; set; }
+        public IList<Player> Players { get; set; }
+        
     }
 }

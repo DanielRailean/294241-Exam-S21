@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API.Models
 {
@@ -16,5 +17,7 @@ namespace API.Models
         public int GoalsThisSeason{get; set; }
         [Required]
         public string Position{get; set; }
+        [ForeignKey("TeamName")]
+        public string TeamRefTeamName { get; set; }
     }
 }
